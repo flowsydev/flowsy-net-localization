@@ -1,7 +1,5 @@
-﻿using System.Globalization;
-using System.Reflection;
+﻿using System.Reflection;
 using System.Resources;
-using Microsoft.Extensions.Localization;
 
 namespace Flowsy.Localization;
 
@@ -51,7 +49,4 @@ public static class LocalizationExtensions
             return str;
         }
     }
-    
-    public static string GetStringValue(this IStringLocalizer stringLocalizer, string name) =>
-        stringLocalizer.GetString(name).Value;
 }
